@@ -1,3 +1,6 @@
-<p>
-  home works!
-</p>
+<h3> Home </h3>
+<p> change counter here and go to <a routerLink="/ngrx"> ngrx page </a> and get same counter state </p>
+<button (click)="increment()">Increment</button>
+<div>Current Count: {{ count$ | async }}</div>
+<button (click)="decrement()">Decrement</button>
+<button (click)="reset()">Reset Counter</button>
